@@ -1,0 +1,599 @@
+@font-face {
+    font-family: LeagueSpartan-Bold;
+    src: url(font/LeagueSpartan-Bold.otf);
+}
+@font-face {
+    font-family: Redock;
+    src: url(font/Redock.otf);
+}
+@font-face {
+    font-family: Lato;
+    src: url(font/Lato-Medium.ttf);
+}
+@font-face {
+    font-family: Shamson Signature Regular;
+    src: url(font/Shamson\ Signature\ Regular.otf);
+}
+
+.back-nav {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.back-btn {
+    margin: 10px;
+    color: black;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+}
+
+.back-menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+}
+
+.back-menu li {
+    margin: 0;
+}
+
+.back-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    display: block;
+    text-align: right;
+}
+
+.back-menu a:hover {
+    font-size: 1.9rem;
+    background-color: white;
+    animation: show 0.3s;
+    text-shadow: 3px 2px black, -2px -2px #7c7c7c;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 6px 6px;
+}
+
+.back-nav:hover .back-menu {
+    display: flex;
+    
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    font-family: LeagueSpartan-Bold;
+    color: rgb(236,236,236);
+    (animation: rotateBackground 90s linear infinite;)
+    transform-origin: top center;
+    font-size: 97%;
+    max-width: 1200px;
+}
+
+@keyframes rotateBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #121212;
+    background-image: radial-gradient(circle, rgba(56, 56, 56, 0.698) 1px, transparent 1px);
+    background-size: 22px 22px;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: Redock;
+    color: rgb(236,44,48);
+}
+
+p {
+    margin-bottom: 25px;
+    font-family: Lato;
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 60px;
+}
+
+.title {
+    font-size: 5rem;
+    font-family: Redock;
+    color: rgb(236,44,48);
+    margin: auto;
+}
+
+.title a{
+    color: rgb(245,220,50);
+}
+
+.title p {
+    position: relative;
+    bottom: 22px;
+    left: 140px;
+    font-size: 35px;
+    font-family: Shamson Signature Regular;
+}
+
+.nav-links {
+    margin: 70px 0;
+}
+.nav-links li {
+    padding-top: 10px;
+}
+.nav-links a {
+    display: block;
+    font-size: 3rem;
+    padding: 0 10px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+.nav-links :hover {
+    background-color: white;
+    animation: show 0.3s;
+    text-shadow: 3px 2px black, -2px -2px #7c7c7c;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 6px 6px;
+}
+
+@keyframes show {
+    0% { text-shadow: 0 0 black, -2px -2px #7c7c7c; }
+    100% { text-shadow: 3px 2px black, -2px -2px #7c7c7c; }
+}
+
+#about {
+    margin: 10rem 0;
+    box-shadow: rgb(236,236,236);
+}
+
+.top-about, .column-about {
+    display: flex;
+    width: 90%;
+    text-align: center;
+}
+.top-about {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.column-about {
+    flex-direction: row;
+}
+
+.isi-about {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: left;
+    margin: 2rem auto;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 45%;
+}
+
+.foto h1 {
+    align-items: center;
+    width: 45%;
+}
+
+.foto img {
+    width: 20rem;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+    background-size: 20rem;
+    
+}
+.foto img:hover {
+    filter: invert(0) grayscale(20%) sepia(10%) contrast(120%);
+    box-shadow: 0 10px 150px rgba(255, 255, 255, 0.2);
+    transition: 2s ease-in-out;
+}
+
+.grid-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7rem;
+    margin-top: 10px;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+#skills {
+    margin: 10rem 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hard-skills h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.skills-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 10px rgba(63, 63, 63, 0.2);
+}
+
+.skill-card img {
+    width: 100px;
+}
+
+.skill-card p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.skill-card small {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.work {
+    margin-top: 100px;
+    text-align: left;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #121212;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    position: relative;
+    padding: 40px 20px 20px 20px;
+}
+
+.work-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: auto;
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+    opacity: 0.5;
+}
+
+.work-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 1;
+}
+
+.work-list h3 {
+    display: flex;
+    font-size: 25px;
+}
+
+#memory {
+    display: flex;
+    margin: 10rem 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(49, 49, 49, 0.664) ;
+
+}
+
+  
+.gallery {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    width: 900px;
+    height: auto;
+    max-height: 900px;
+}
+  
+.gallery-card {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    height: 60vh;
+    padding: 0;
+}
+  
+.foto1 {
+    align-items: center;
+    flex: 1;
+    height: 60vh;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: flex 0.8s ease;
+    filter: blur(2px);
+}
+
+.foto1:hover {
+    flex: 7;
+    filter: blur(0);
+}
+
+.moon1 {
+    background-image: url(pic/moon1.jpg);
+}
+
+.moon2 {
+    background-image: url(pic/moon2.jpg);
+}
+
+.moon3 {
+    background-image: url(pic/moon3.jpg);
+}
+
+.moon4 {
+    background-image: url(pic/moon4.jpg);
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    padding-top: 50px;
+    background-color: #1a1a1a;
+    justify-items: start;
+    align-items: start;
+    font-size: 1rem;
+    height: 25rem;
+}
+
+.contact-main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-main a {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-main h2, .contact-main p, .contact-main a {
+    text-align: start;
+}
+
+.kanji {
+    grid-row: span 2;
+    font-size: 5rem;
+    color: rgb(236,44,48);
+    border: 4px solid white;
+}
+
+.contact {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 100%;
+}
+
+.credits {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 100%;
+    height: 50px;
+}
+
+.socials {
+    display: felx;
+    flex-direction: row;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.socials li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-align: start;
+}
+
+.socials img {
+    width: 25px;
+    margin: 0;
+}
+
+.blor {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+footer {
+    background-color: rgb(236,236,236);
+    margin-bottom: -rem;
+    width: 100%;
+}
+
+.signature h1 {
+    font-size: 31rem;
+    margin-bottom: -3rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.signature p {
+    color: black;
+}
+
+@media (max-width: 768px) {
+
+  * {
+    max-width: 100%;
+    font-size: 85%;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    margin: 20px;
+  }
+
+  .nav-links {
+    margin: 20px 0;
+  }
+
+  .nav-links a {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .title p {
+    font-size: 1.2rem;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    position: static;
+  }
+
+  .column-about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto img {
+    width: 20rem;
+    max-width: 300px;
+  }
+
+  .foto h1 {
+    position: relative;
+    width: 300px;
+    max-width: 300px;
+    right: 50%;
+  }
+
+  .isi-about {
+    width: 90%;
+    text-align: center;
+  }
+
+    .grid-about {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+  }
+
+    .grid-about p {
+    font-size: 100%;
+  }
+
+  .skills-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .contact-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px;
+    gap: 20px;
+    height: 300px;
+    font-size: 1rem;
+  }
+
+  
+    #memory {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+    }
+
+    .memory {
+    margin: 0 400px;
+    font-size: 2rem;
+    text-align: center;
+
+    }
+
+    .gallery-card {
+    flex-direction: row;
+    gap: 2px;
+    transform: scale(1.0);
+    }
+
+    .kanji {
+    font-size: 3rem;
+    text-align: center;
+    }
+
+    .signature h1 {
+    font-size: 12rem;
+    padding-bottom: 50px;
+    }
+
+    .signature p {
+    font-size: 0.9rem;
+    text-align: center;
+    }
+
+}
